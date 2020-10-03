@@ -1,7 +1,10 @@
 const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
-  document.body.style.background = randomColor();
+  const random = randomColor();
+  document.body.style.background = random;
+
+  btn.textContent = random;
 });
 
 const randomColor = () => {
